@@ -1,0 +1,69 @@
+/*окно - задний план*/
+.fon { 
+  margin-top:10%;
+  margin-left: 18%;
+  height: 608px; /*высота на весь экран*/
+  width: 800px; /*длина на весь экран*/
+  position: center;
+  background: linear-gradient(
+200deg
+, black, yellow, red); /*цвет фона*/
+  border-radius: 1000px; /*рамка закругление самой большой*/
+
+  cursor: none; /*курсор мыши не отображается*/
+  animation: animate 15.5s linear infinite; /*чтобы градиент переливался*/
+}
+
+/*окошечко для циферок*/
+.fon .uncomenkad,
+.fon span{
+  position: absolute;
+  top: 50%; /*положение маленького окна в центре экрана*/
+  left: 50%; /*положение маленького окна в центре экрана*/
+  transform: translate(-50%, -50%);
+}
+.fon .uncomenkad{ 
+  z-index: 999; /*наложение окошка с цифрами поверх фона*/
+  height: 150px; /*высота окна для цифр*/
+  width: 680px;/* длина окна для цифр*/
+  background: #1b1b1b; /*цвет окошка для цифр*/
+  border-radius: 46px; /*закругление окошка для цифр*/
+  text-align: center; /*расположение текста(циферок) по центру окошечка*/
+}
+
+/*махинации с цифрами*/
+.uncomenkad #vemekunys {
+  top: 70px; /*положение цифр в центре оклшечка*/
+  left: 50%;/*положение цифр в центре оклшечка*/
+  /*color: #fbf4f4;*/
+  font-size: 128px; /*размер цифр*/
+  font-weight: 700; /*жирные цифры*/
+  letter-spacing: 2px; /*расстояние между цифрами*/
+  background: linear-gradient( /*цифры переливаются*/
+135deg
+, gray, purple, pink);
+  -webkit-background-clip: text; /*заливка фона внутри поля содержимого*/
+  -webkit-text-fill-color: transparent; /*чтобы цифры не были цвета фона окна*/
+  animation: animate 15.5s linear infinite; /*чтобы переливались цифры*/
+}
+
+@keyframes animate {
+  100%{
+  filter: hue-rotate(300deg); /*насыщение цветом цифр
+  }
+}*/
+
+/*.fon span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}*/
+
+/*.fon span:first-child{
+  filter: blur(77px);
+}
+
+.fon span:last-child{
+  filter: blur(2px);
+}*/

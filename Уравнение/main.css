@@ -1,0 +1,7 @@
+body {
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(https://img.freepik.com/free-vector/seamless-pattern-of-water-drops-of-different-shapes-with-shadows-in-light-green-colors_444390-3067.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	font-family: sans-serif;
+}
